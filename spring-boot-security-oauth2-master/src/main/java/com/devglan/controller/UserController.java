@@ -22,6 +22,7 @@ public class UserController {
 
     @RequestMapping(value = "/user", method = RequestMethod.POST)
     public User create(@RequestBody User user){
+    	System.out.println("hellow github");
         return userService.save(user);
     }
 
